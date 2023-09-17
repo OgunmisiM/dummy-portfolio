@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --main-white: #f0f0f0;
+  --main-red: #be3144;
+  --main-blue: #45567d;
+  --main-gray: #303841;
+}
+
+h1 {
+  color: var(--main-white);
+  font-size: 2.7rem;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+/* navbar styling */
+nav {
+  background-color: var(--main-red);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav-item {
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+.nav-item:hover {
+  background-color: var(--main-blue);
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--main-white);
+}
+
+/* Welcome section styling */
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 100vh;
+}
+#welcome-section p {
+  color: var(--main-red);
+  font-style: italic;
+  font-size: 1.5rem;
+}
+
+#projects {
+  background-color: var(--main-blue);
+}
+.projects_header {
+  padding: 1.5rem;
+  border-bottom: var(--main-white) 1px solid;
+  margin: 0 auto 20px auto;
+  max-width: 700px;
+}
+.project_card {
+  margin: 1rem 1rem;
+  background-color: var(--main-gray);
+}
+.project_image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.project_card_title {
+  text-align: center;
+  padding: 1rem;
+}
+.code {
+  color: var(--main-gray);
+}
+.project_card:hover .code {
+  color: var(--main-red);
+  transition: 3ms ease-in;
+}
+.project-tile {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+}
+
+#contact {
+  width: 100%;
+  background-color: var(--main-gray);
+}
+.contact_text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact_text p {
+  color: var(--main-white);
+  font-style: italic;
+}
+footer {
+  color: var(--main-white);
+  background-color: var(--main-gray);
+  display: flex;
+  padding: 1rem;
+  border-top: var(--main-red) 3px solid;
+}
+
+@media screen and (max-width: 900px) {
+  .nav-list {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
